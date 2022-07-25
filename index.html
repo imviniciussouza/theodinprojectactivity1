@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+* {
+	box-sizing: border-box;
+}
+body{
+	background-color: #1f2937;
+    width: 800px;
+    margin: auto;
+    padding: 0;
+	color: white;
+    font-size: 16px;
+}
+.navbar{
+	
+}
+div.logo{   
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul.links{
+	display: flex;
+	justify-content: space-between;
+    list-style-type: none;
+}
+li {
+	padding-right: 4px;
+    padding-left: 4px;
+    font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+}
+a:visited{
+	
+	color: white;
+}
+/* edição da primeira seção */
+.page-one{
+	display: flex;
+    align-items: center;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.page-one-1{
+	width: 400px;
+}
+.titulo-page {
+	font-size: 48px;
+}
+.placeholder{
+	width: 400px;
+    height: 270px;
+    background-color: grey;
+    margin-left: 20px;
+}
+button{
+	border: none;
+    width: 120px;;
+    height: 40px;;
+    background-color: #3882f6;
+    border-radius: 10px;
+    font-size: 18px;
+	font-width: extra bold;
+	color: #fff;
+    cursor: pointer;
+    
+}
+p.text{
+	color: #e5e7eb;
+    font-size: 18px;
+}
+.second-page {
+	background-color: white;
+
+}
+.box{
+	width: 120px;
+    height: 120px;
+    border: 4px solid blue;
+    border-radius: 10px;
+}
+.pacote{
+	display: flex;
+    justify-content: space-evenly;
+	
+}
+.sub-1, .sub-2,
+.sub-3, .sub-4 {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 180px;
+    height: 300px;
+}
+#page-2 {
+
+    color: black;
+    font-size: 36px;
+    font-weight: extra-bold;
+    text-align: center;
+}
+.divpage-2{
+	bakcground-color: black;
+}
+.divpage-2 > .tex{ color: black;}
+</style>
+<header>
+<nav class="navbar">
+	<div class="logo">
+    	<h1>Header Logo</h1>
+        <ul class="links">
+        	<li><a href="#">header link one</a></li>
+            <li><a href="#">header link two</a></li>
+            <li><a href="#">header link three</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+<body>
+<section>
+	<div class="page-one">
+    	<div class="page-one-1">
+        <h1 class="titulo-page">This website is awesome</h1>
+        <p class="text">This website has some subtext that goes here under the main title. it's a smaller font and the color is lower contrast.</p>
+        <button type="submit">Sign up </button>
+    	</div>
+    <div class="placeholder"> this is a placeholder for an image
+    
+    </div>
+    </div>
+</section>
+<section class="second-page">
+
+    <div id="divpage-2">
+		<h1 id="page-2">Some random information</h1>
+	</div>
+    <div class="pacote">
+	<div class="sub-1">
+    	<div class="box"></div>
+        <div class="text">this is some text under an ilustration or imagem</div>
+    </div>
+    <div class="sub-2">
+    	<div class="box"></div>
+        <div class="text">this is some text under an ilustration or imagem</div>
+    </div>
+    <div class="sub-3">
+    	<div class="box"></div>
+        <div class="text">this is some text under an ilustration or imagem</div>
+    </div>
+    <div class="sub-4">
+    	<div class="box"></div>
+        <div class="text">this is some text under an ilustration or imagem</div>
+    </div>
+</div>
+
+</section>
+
+</body>
+</html>
