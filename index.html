@@ -12,6 +12,7 @@ body{
     padding: 0;
 	color: white;
     font-size: 16px;
+    font-family: Hero main;
 }
 .navbar{
 	
@@ -76,8 +77,10 @@ p.text{
 	color: #e5e7eb;
     font-size: 18px;
 }
+/* stsyle da segunda parte */
 .second-page {
 	background-color: white;
+    height: 400px;
 
 }
 .box{
@@ -88,7 +91,7 @@ p.text{
 }
 .pacote{
 	display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 	
 }
 .sub-1, .sub-2,
@@ -96,22 +99,100 @@ p.text{
 	display: flex;
     flex-direction: column;
     align-content: center;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-right: auto;
     width: 180px;
     height: 300px;
-}
-#page-2 {
-
     color: black;
+}
+.divpage-2 h1 {
+	bakcground-color: black;
+    color: #1f2973;
     font-size: 36px;
     font-weight: extra-bold;
     text-align: center;
+    padding-top: 50px;
 }
-.divpage-2{
-	bakcground-color: black;
+.text-box {
+	width: 120px;
+    font-size: 14px;
+    padding-left: 5px;
+    text-align: center;
+    color: #1f2937;
+
+
 }
-.divpage-2 > .tex{ color: black;}
+/* style part 3*/
+.third-page{
+	background-color: #e5e7eb;
+    height: 400px;
+}
+.quote{
+
+	margin-left: 60px;
+    margin-right: 50px;
+    padding-top: 30px;
+}
+.quote p{
+	font-size: 36px ;
+    color: #1f2937;
+    font-style:  italic;
+}
+.author {
+	display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+/*style 4*/
+.fourth-page{
+	background-color: #fff;
+	height: 300px;
+	display: flex;	
+    justify-content: center;
+    align-items: center;
+}
+.page-4{
+	width: 700px;
+	height: 100px;
+	background-color: #3882f6;	
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.call-to-acion {
+	background-color: #3882f6;
+	border: 2px solid white;
+	color: #fff;
+    height: 40px;
+    width: 100px;
+    margin-right: 60px;
+    margin-top: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-box-4{
+	margin-left: 40px;
+}
+.text-box-4 h4{
+	font-size: 18px;
+}
+.text-box-4 p{
+	font-size: 16px;
+    margin-top: -15px;
+}
+/* style footer */
+
+.footer{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    height: 80px;
+}
 </style>
 <header>
 <nav class="navbar">
@@ -130,7 +211,7 @@ p.text{
 	<div class="page-one">
     	<div class="page-one-1">
         <h1 class="titulo-page">This website is awesome</h1>
-        <p class="text">This website has some subtext that goes here under the main title. it's a smaller font and the color is lower contrast.</p>
+        <p class="text-3">This website has some subtext that goes here under the main title. it's a smaller font and the color is lower contrast.</p>
         <button type="submit">Sign up </button>
     	</div>
     <div class="placeholder"> this is a placeholder for an image
@@ -138,31 +219,59 @@ p.text{
     </div>
     </div>
 </section>
+<!-- section 2 -->
+
 <section class="second-page">
 
-    <div id="divpage-2">
-		<h1 id="page-2">Some random information</h1>
+    <div class="divpage-2">
+		<h1>Some random information</h1>
 	</div>
     <div class="pacote">
 	<div class="sub-1">
     	<div class="box"></div>
-        <div class="text">this is some text under an ilustration or imagem</div>
+        <div class="text-box">this is some text under an ilustration or imagem</div>
     </div>
     <div class="sub-2">
     	<div class="box"></div>
-        <div class="text">this is some text under an ilustration or imagem</div>
+        <div class="text-box">this is some text under an ilustration or imagem</div>
     </div>
     <div class="sub-3">
     	<div class="box"></div>
-        <div class="text">this is some text under an ilustration or imagem</div>
+        <div class="text-box">this is some text under an ilustration or imagem</div>
     </div>
     <div class="sub-4">
     	<div class="box"></div>
-        <div class="text">this is some text under an ilustration or imagem</div>
+        <div class="text-box">this is some text under an ilustration or imagem</div>
     </div>
 </div>
 
 </section>
+<!-- seção 3 -->
 
+<section class="third-page">
+	<div class="quote">
+		<p>This is an inspiring quote, or a testminonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks like nice.</p>
+        <p class="author">-Thor, God of Thunder</p>
+    </div>
+
+</section>
+
+<!--- seção 4 -->
+<section class="fourth-page">
+	<div class="page-4">
+    	<div class="text-box-4">
+        	<h4>Call to action! It's time!</h4>
+            <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
+        <div class="call-to-acion">
+        <a>Sign up</a>
+        </div>
+    </div>
+</section>
+<footer>
+	<div class="footer">
+    <h3>Copyright  © The Odin Project 2021</h3>
+    </div>
+</footer>
 </body>
 </html>
